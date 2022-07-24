@@ -1,46 +1,156 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Panda Commerce</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  </head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
     <header>
+        <!-----------
+                Navigation Bar starts
+            ---------->
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Shoes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Backpack</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Subscribe</a>
-                    </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Shoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Backpack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
+        <!----------
+             Navigation Bar ends 
+            --------->
+        <!-- Slider starts  -->
+
+        <section class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active p-5 border rounded bg-info">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div>
+                                    <h1>Cool Dude Headphones</h1>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corporis
+                                        delectus</p>
+                                    <h2>420$</h2>
+                                    <button class="btn btn-success">Buy Now</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item p-5 border rounded bg-info">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div>
+                                    <h1>Mega LCD TV For Sports</h1>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corporis
+                                        delectus
+                                    </p>
+                                    <h2>420$</h2>
+                                    <button class="btn btn-success">Buy Now</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-5 border rounded bg-info">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div>
+                                    <h1>X-Box for your living room</h1>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corporis
+                                        delectus
+                                    </p>
+                                    <h2>420$</h2>
+                                    <button class="btn btn-success">Buy Now</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!-- slider ends  -->
     </header>
-    <body>
-        
-    </body>
+
+    <main>
+        <section>
+            <div class="container text-center">
+                <div class="row g-2">
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-5 border rounded">
+                        <div class="p-3 border bg-success d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Bag</h1>
+                            <img src="images/categories/bag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-5 border rounded">
+                        <div class="p-3 border bg-danger d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Shoe</h1>
+                            <img src="images/categories/shoes.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-5 border rounded">
+                        <div class="p-3 border bg-info d-flex align-items-center justify-content-around">
+                            <h1 class="text-white">Watch</h1>
+                            <img src="images/categories/watch.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
