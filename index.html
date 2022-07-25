@@ -7,14 +7,15 @@
     <title>Panda Commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="mt-5">
     <header>
         <!-----------
                 Navigation Bar starts
             ---------->
-        <nav class="navbar navbar-expand-lg bg-light w-100 position-fixed">
+        <nav class="navbar navbar-expand-lg bg-light w-100 fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -30,13 +31,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Shoes</a>
+                            <a class="nav-link" aria-current="page" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Backpack</a>
+                            <a class="nav-link" aria-current="page" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Subscribe</a>
+                            <a class="nav-link" aria-current="page" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +51,7 @@
         <section class="container">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active p-5 border rounded bg-info">
+                    <div class="carousel-item active p-5 border rounded panda-panda-bg-info">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
@@ -58,7 +59,7 @@
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corporis
                                         delectus</p>
                                     <h2>420$</h2>
-                                    <button class="btn btn-success">Buy Now</button>
+                                    <button class="btn btn-success  btn-buy-now">Buy Now</button>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -67,7 +68,7 @@
                         </div>
 
                     </div>
-                    <div class="carousel-item p-5 border rounded bg-info">
+                    <div class="carousel-item p-5 border rounded panda-bg-info">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
@@ -76,7 +77,7 @@
                                         delectus
                                     </p>
                                     <h2>420$</h2>
-                                    <button class="btn btn-success">Buy Now</button>
+                                    <button class="btn btn-success  btn-buy-now">Buy Now</button>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -84,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item p-5 border rounded bg-info">
+                    <div class="carousel-item p-5 border rounded panda-bg-info">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
@@ -93,7 +94,7 @@
                                         delectus
                                     </p>
                                     <h2>420$</h2>
-                                    <button class="btn btn-success">Buy Now</button>
+                                    <button class="btn btn-success  btn-buy-now">Buy Now</button>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -121,7 +122,7 @@
     <!-- categories start  -->
     <main>
         <section>
-            <div class="container text-center">
+            <div class="container text-center categories">
                 <div class="row g-2">
                     <div class="col-lg-4 col-md-6 col-sm-12 my-5">
                         <div class="p-3 border bg-success rounded d-flex align-items-center justify-content-around">
@@ -136,7 +137,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-5">
-                        <div class="p-3 border bg-info rounded d-flex align-items-center justify-content-around">
+                        <div class="p-3 border panda-bg-info rounded d-flex align-items-center justify-content-around">
                             <h1 class="text-white">Watch</h1>
                             <img class="" src="images/categories/watch.png" alt="">
                         </div>
@@ -144,9 +145,11 @@
                 </div>
             </div>
         </section>
+    <!-- categories end  -->
+
         <!-- Shoe section start  -->
 
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -159,7 +162,7 @@
                         </div>
                         <div class="ms-3 border border-0 bg-white">
                             <h3 class="text-black">300$</h3>
-                            <a href="#" class="pt-3"><button class="btn btn btn-primary">Buy Now</button></a>
+                            <a href="#" class="pt-3"><button class="btn btn btn-primary btn-buy-now">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +176,7 @@
                         </div>
                         <div class="ms-3 border border-0 bg-white">
                             <h3 class="text-black">300$</h3>
-                            <a href="#" class="pt-3"><button class="btn btn btn-primary">Buy Now</button></a>
+                            <a href="#" class="pt-3"><button class="btn btn btn-primary btn-buy-now">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +192,7 @@
                         </div>
                         <div class="ms-3 border border-0 bg-white">
                             <h3 class="text-black">300$</h3>
-                            <a href="#" class="pt-3"><button class="btn btn btn-primary">Buy Now</button></a>
+                            <a href="#" class="pt-3"><button class="btn btn btn-primary btn-buy-now">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +202,7 @@
         </section>
         <!-- shoe section end  -->
         <!-- Backpack section start  -->
-        <section class="container my-5"> 
+        <section class="container my-5" id="backpack">
             <h2>Backpacks</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -212,7 +215,7 @@
                         </div>
                         <div class="ms-3 border border-0 bg-white">
                             <h3 class="text-black">300$</h3>
-                            <a href="#" class="pt-3"><button class="btn btn btn-primary">Buy Now</button></a>
+                            <a href="#" class="pt-3"><button class="btn btn btn-primary btn-buy-now">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +229,7 @@
                         </div>
                         <div class="ms-3 border border-0 bg-white">
                             <h3 class="text-black">300$</h3>
-                            <a href="#" class="pt-3"><button class="btn btn btn-primary">Buy Now</button></a>
+                            <a href="#" class="pt-3"><button class="btn btn btn-primary btn-buy-now">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -242,7 +245,7 @@
                         </div>
                         <div class="ms-3 border border-0 bg-white">
                             <h3 class="text-black">300$</h3>
-                            <a href="#" class="pt-3"><button class="btn btn btn-primary">Buy Now</button></a>
+                            <a href="#" class="pt-3"><button class="btn btn btn-primary btn-buy-now">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -251,9 +254,23 @@
             </div>
         </section>
         <!-- Backpack section end  -->
+        <!-- form section start  -->
+        <section style="height: 300px;" class="container rounded my-5 panda-bg-info d-flex justify-content-center align-items-center" id="subscribe">
+            <div>
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>Get updates on sales, specials and more</p>
+                <form>
+                    <div class="mb-1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-success btn-subscribe">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- form section end  -->
     </main>
-    <footer>
-
+    <footer class="text-center text-black-75">
+        <p><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
